@@ -269,3 +269,91 @@ footer i {
     background-size: cover;
     margin: 5px 0 0 5px !important;
 }
+
+
+/* Page Eco-responsable*/
+
+.parallax-valeurs {
+    background-image: url(images/houblon-2.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 70vh;
+}
+
+
+/*Page Produits */
+
+.pilsner {
+    display: flex;
+    align-self: center;
+    background-image: url(images/fond-myrtille.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 50vh;
+    margin: 70px 0 !important;
+}
+
+.black {
+    display: flex;
+    align-self: center;
+    background-image: url(images/grains-cafe.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 50vh;
+    margin: 70px 0 !important;
+}
+
+.jasmin {
+    display: flex;
+    align-self: center;
+    background-image: url(images/Jasmin.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 50vh;
+    margin: 70px 0 !important;
+}
+
+.beer {
+    display: flex;
+    align-items: center;
+    align-self: center;
+    width: 30vw;
+    height: 40vh;
+    margin: 0 50px 0 auto;
+}
+
+.beer img {
+    max-width: 100%;
+    max-height: 100%;
+    margin-right: 100px;
+    transition: 1.5s;
+}
+
+.beer img:hover {
+    transform: rotate(60deg);
+    transition: 1.5s;
+}
+
+.beer p {
+    font-size: 16px;
+}
+
+.beer-pos1 {
+    margin: 0 110px 0 auto;
+}
+
+.beer-pos2 {
+    margin: 0 auto 0 110px;
+}
+
+.beer-pos3 {
+    margin: 0 auto 0 auto;
+}
