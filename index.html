@@ -15,21 +15,27 @@
 
 <body>
     <header>
-        <div>
-            <h1>STEAMPUNK, votre bière artisanale, locale, éco-responsable, mais de caractère.</h1>
-            <div>
-                <div>
-                    <h4>Déjà amateur de nos bières !</h4>
-                    <button>Commander</button>
+        <div class="container-fluid header-background">
+            <div class="call-to-action">
+                <div class="row">
+                    <div class="col">
+                        <h1>STEAMPUNK, votre bière artisanale, locale, éco-responsable, mais de caractère.</h1>
+                    </div>
                 </div>
-                <div>
-                    <h4>Nouveau venu ?</h4>
-                    <button>Découvrir</button>
+                <div class="row call-to-action">
+                    <div class="col-md-6 call-to-action-btn">
+                        <h4>Déjà amateur de nos bières !</h4>
+                        <button class="round-btn">Commander</button>
+                    </div>
+                    <div class="col-md-6 call-to-action-btn">
+                        <h4>Nouveau venu ?</h4>
+                        <button class="round-btn">Découvrir</button>
+                    </div>
                 </div>
             </div>
         </div>
         <!--Navbar-->
-        <nav class="navbar navbar-expand-md bg-light navbar-light fixed-top">
+        <nav class="navbar navbar-expand-md bg-light navbar-light fixed-top" style="background-color: black !important;">
             <div class="container">
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -49,27 +55,23 @@
         </nav>
     </header>
     <main>
-        <div class="container">
+        <div class="container-fluid">
             <div class="row">
-                <div class="col-md-6">
+                <div class="col-md-6 title-section" id="gamme">
                     <h2>Notre gamme de produits</h2>
-                    <img src="ressources/images/Gamme.png" alt="Les différentes créations de la micro-brasserie SteamPunk">
                 </div>
                 <div class="col-md-6">
                     <div class="row">
-                        <div class="col-md-6">
+                        <div class="col-md-6 title-section" id="eco">
                             <h2>Eco-responsable</h2>
-                            <img src="ressources/images/houblon.png" alt="Les différentes créations de la micro-brasserie SteamPunk">
                         </div>
-                        <div class="col-md-6">
+                        <div class="col-md-6 title-section" id="event">
                             <h2>Evenements</h2>
-                            <img src="ressources/images/Evenement.jpg" alt="Les différentes créations de la micro-brasserie SteamPunk">
                         </div>
                     </div>
                     <div class="row">
-                        <div class="col">
+                        <div class="col title-section" id="savoir">
                             <h2>Notre Savoir-Faire</h2>
-                            <img src="ressources/images/brasserie.jpg" alt="Les différentes créations de la micro-brasserie SteamPunk">
                         </div>
                     </div>
                 </div>
@@ -78,7 +80,7 @@
     </main>
     <footer>
         <div class="container">
-            <div class="row">
+            <div class="row informations">
                 <div class="col-md-4">
                     <img src="ressources/images/LogoBrasserieOrangeNoir.png" alt="Logo de la micro-brasserie SteamPunk">
                 </div>
@@ -103,9 +105,9 @@
                     </div>
                     <div>
                         <h5>réseaux sociaux</h5>
-                        <i class="fab fa-facebook-square"></i>
-                        <i class="fab fa-twitter-square"></i>
-                        <i class="fab fa-instagram-square"></i>
+                        <i class="fab fa-facebook-square fa-2x"></i>
+                        <i class="fab fa-twitter-square fa-2x"></i>
+                        <i class="fab fa-instagram-square fa-2x"></i>
                     </div>
                 </div>
                 <div class="col-md-4">
@@ -113,7 +115,7 @@
                         width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
                 </div>
             </div>
-            <div class="row">
+            <div class="row copyright">
                 <p>
                     <a href="">Mentions Légales</a>
                     <a href="">CGV</a>

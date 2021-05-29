@@ -1,6 +1,271 @@
 html {
     margin: 0;
     padding: 0;
+}
+
+body {
+    margin: 0 !important;
+    padding: 0 !important;
     font-family: 'Merienda', cursive;
-    background-color: #000 !important;
+    background-color: #000;
+    color: #fff;
+    text-shadow: 1px 1px 2px black;
+}
+
+h2 {
+    text-align: center;
+    margin: 30px auto;
+}
+
+h3 {
+    margin: 0 auto;
+    align-self: center;
+    opacity: 0;
+    transition: 0.75s;
+    font-size: 260%;
+}
+
+h3:hover {
+    opacity: 1;
+    transition: 1s;
+}
+
+h5 {
+    text-transform: uppercase;
+}
+
+p {
+    font-size: 13px;
+}
+
+.col,
+.col-md-6,
+.col-md-4 {
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+a {
+    color: #EB9560 !important;
+}
+
+
+/* Header */
+
+.header-background {
+    background-image: url(images/Bar-brasserie.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 80vh;
+}
+
+.call-to-action {
+    position: relative;
+    top: 50%;
+    color: white;
+    text-align: center;
+    justify-content: center;
+}
+
+.call-to-action-btn {
+    max-width: 500px;
+    margin-top: 50px !important;
+}
+
+.round-btn {
+    margin-top: 15px;
+    border-radius: 15px;
+    padding: 5px 15px;
+    border: 2px #fff solid;
+    background-color: #EB9560;
+    color: #fff;
+    transition: 1s;
+}
+
+.round-btn:hover {
+    background-color: transparent;
+    transition: 1s;
+}
+
+.square-btn {
+    justify-content: center;
+    margin-top: 15px;
+    padding: 5px 15px;
+    border: 2px #fff solid;
+    background-color: #EB9560;
+    color: #fff;
+    transition: 1s;
+}
+
+.square-btn:hover {
+    background-color: transparent;
+    transition: 1s;
+}
+
+.navbar-brand img {
+    max-width: 150px;
+}
+
+.title-section {
+    margin: 0;
+    padding: 0;
+}
+
+.title-section h2 {
+    position: relative;
+    height: 50vh;
+    top: 40%;
+    text-align: center;
+    color: white;
+    font-size: 300%;
+    font-weight: bold;
+}
+
+#gamme {
+    background-image: url(images/Gamme.png);
+    width: 48%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 10px 15px 0 0 !important;
+}
+
+#eco {
+    background-image: url(images/houblon.png);
+    width: 49%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 10px 5px 5px auto !important;
+}
+
+#event {
+    background-image: url(images/Evenement.jpg);
+    width: 49%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 10px 0 5px auto !important;
+}
+
+#savoir {
+    background-image: url(images/brasserie.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 8px 0 0 8px !important;
+}
+
+
+/* Footer */
+
+footer {
+    margin-top: 40px;
+    color: #EB9560;
+}
+
+footer i {
+    margin: 5px 8px;
+}
+
+.informations {
+    text-align: center;
+}
+
+.copyright {
+    text-align: center;
+    margin-top: 10px;
+}
+
+
+/* Page valeurs*/
+
+.parallax-valeurs {
+    background-image: url(images/barrelagedbeer_main.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 70vh;
+}
+
+.savoir-wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 33vw;
+    margin: 0 100px 0 auto;
+    text-align: center;
+    justify-content: center;
+}
+
+
+/* Page compétences */
+
+.skill-wrapper {
+    border: 20px#fff solid;
+    padding: 0px 9px 0px 12px;
+}
+
+.skill-wrapper img {
+    max-width: 100%;
+}
+
+.row1-cut {
+    height: 433px;
+}
+
+#brewery {
+    display: flex;
+    width: 49%;
+    background-image: url(images/brasserie.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0 5px 5px 0 !important;
+}
+
+#malt-hop {
+    display: flex;
+    background-image: url(images/malts-houblon.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0 0 5px 5px !important;
+}
+
+.row2-cut {
+    height: 973px;
+}
+
+#malt {
+    display: flex;
+    width: 49%;
+    background-image: url(images/malt.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 5px 5px 5px 0 !important;
+}
+
+#testing {
+    display: flex;
+    background-image: url(images/stout_tester-684x1024.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 5px 0 5px 5px !important;
+}
+
+.row3-cut {
+    height: 779px;
+}
+
+#tasting {
+    display: flex;
+    width: 49%;
+    background-image: url(images/Tasting.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 5px 5px 0 0 !important;
+}
+
+#skill-gamme {
+    display: flex;
+    background-image: url(images/Gamme.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 5px 0 0 5px !important;
 }
