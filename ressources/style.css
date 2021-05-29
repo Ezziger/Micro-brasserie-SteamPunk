@@ -347,13 +347,13 @@ footer i {
 }
 
 .beer-pos1 {
-    margin: 0 110px 0 auto;
+    margin: 0 auto 0 auto;
 }
 
 .beer-pos2 {
-    margin: 0 auto 0 110px;
+    margin: 0 110px 0 auto;
 }
 
 .beer-pos3 {
-    margin: 0 auto 0 auto;
+    margin: 0 auto 0 110px;
 }
