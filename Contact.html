@@ -5,87 +5,104 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Merienda:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./ressources/style.css">
     <title>SteamPunk, micro-brasserie artisanale</title>
 </head>
 
 <body>
     <header>
-        <div>
-            <h1>STEAMPUNK, votre bière artisanale, locale, éco-responsable, mais de caractère.</h1>
-            <div>
-                <div>
-                    <h4>Déjà amateur de nos bières !</h4>
-                    <button>Commander</button>
+        <div class="container-fluid header-background">
+            <div class="call-to-action">
+                <div class="row">
+                    <div class="col">
+                        <h1>STEAMPUNK, votre bière artisanale, locale, éco-responsable, mais de caractère.</h1>
+                    </div>
                 </div>
-                <div>
-                    <h4>Nouveau venu ?</h4>
-                    <button>Découvrir</button>
+                <div class="row call-to-action">
+                    <div class="col-md-6 call-to-action-btn">
+                        <h4>Déjà amateur de nos bières !</h4>
+                        <button class="round-btn"><a href="Catalogue.html">Commander</a></button>
+                    </div>
+                    <div class="col-md-6 call-to-action-btn">
+                        <h4>Nouveau venu ?</h4>
+                        <button class="round-btn"><a href="Produits.html">Découvrir</a></button>
+                    </div>
                 </div>
             </div>
         </div>
-        <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="#">Brand</a>
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top" style="background-color: black !important;">
+            <div class="container">
+                <a class="navbar-brand" href=""><img src="ressources/images/LogoBrasserieOrangeNoir.png"></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main_nav" aria-expanded="false" aria-label="Toggle navigation">
                  <span class="navbar-toggler-icon"></span>
              </button>
                 <div class="collapse navbar-collapse" id="main_nav">
-                    <ul class="navbar-nav">
-                        <li class="nav-item active"> <a class="nav-link" href="#">Home </a> </li>
-                        <li class="nav-item"><a class="nav-link" href="#"> About </a></li>
-                        <li class="nav-item"><a class="nav-link" href="#"> Services </a></li>
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item active"> <a class="nav-link" href="index.html">Accueil </a> </li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link  dropdown-toggle" href="#" data-bs-toggle="dropdown">  Hover me  </a>
+                            <a class="nav-link  dropdown-toggle" href="#" data-bs-toggle="dropdown">Savoir-Faire</a>
                             <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#"> Submenu item 1</a></li>
-                                <li><a class="dropdown-item" href="#"> Submenu item 2 </a></li>
-                                <li><a class="dropdown-item" href="#"> Submenu item 3 </a></li>
+                                <li><a class="dropdown-item" href="Valeurs.html">Valeurs</a></li>
+                                <li><a class="dropdown-item" href="Compétences.html">Compétences</a></li>
+                                <li><a class="dropdown-item" href="Eco-responsable.html">Eco-responsable</a></li>
                             </ul>
                         </li>
+                        <li class="nav-item"><a class="nav-link" href="Produits.html"> Produits </a></li>
+                        <li class="nav-item"><a class="nav-link" href="Evenements.html"> Evenements </a></li>
+                        <li class="nav-item"><a class="nav-link" href="Catalogue.html"> Catalogue </a></li>
+                        <li class="nav-item"><a class="nav-link" href="Contact.html"> Contact </a></li>
                     </ul>
                 </div>
-                <!-- navbar-collapse.// -->
             </div>
-            <!-- container-fluid.// -->
         </nav>
     </header>
     <main>
         <div class="container">
             <div class="row">
                 <div class="col">
-                    <img src="" alt="">
-                </div>
-                <div class="row">
-                    <form>
-                        <img src="ressources/images/Gamme.png" alt="">
-                        <div>
-                            <label>Nom:</label>
-                            <input type="text" id="name" required>
-                        </div>
-                        <div>
-                            <label>E-mail:</label>
-                            <input type="email" id="email" required>
-                        </div>
-                        <div>
-                            <label>Votre message:</label>
-                            <textarea id="message" rows="3" required></textarea>
-                        </div>
-                        <button>Envoyer</button>
-                    </form>
+                    <h2>Contact</h2>
                 </div>
             </div>
+            <div class="row form-wrapper">
+                <form class="col ">
+                    <img src="ressources/images/Gamme.png" alt="" style="width: 100%;">
+                    <div class="form-centered">
+                        <div>
+                            <label>Nom:</label><br>
+                            <input type="text" id="name" size="30" required>
+                        </div>
+                    </div>
+                    <div class="form-centered">
+                        <div>
+                            <label>E-mail:</label><br>
+                            <input type="email" id="email" size="30" required>
+                        </div>
+                    </div>
+                    <div class="form-centered">
+                        <div>
+                            <label>Votre message:</label><br>
+                            <textarea id="message" rows="3" cols="28" required></textarea>
+                        </div>
+                    </div>
+                    <div class="form-centered">
+                        <button class="round-btn">Envoyer</button>
+                    </div>
+                </form>
+            </div>
+        </div>
         </div>
     </main>
     <footer>
         <div class="container">
-            <div class="row">
-                <div class="col-md-4">
+            <div class="row informations">
+                <div class="col-lg-4">
                     <img src="ressources/images/LogoBrasserieOrangeNoir.png" alt="Logo de la micro-brasserie SteamPunk">
                 </div>
-                <div class="col-md-2">
+                <div class="col-lg-2">
                     <div>
                         <h5>adresse</h5>
                         <p>STEAMPUNK<br> Place des Tilleuls<br> 85170 Beaufou</p>
@@ -95,7 +112,7 @@
                         <p>LUNDI: Fermé<br> MARDI: 18h-22h<br> MERCREDI: 18h-0h<br> JEUDI: 18h-22h<br> VENDREDI: 18h-0h<br> SAMEDI: 18h-0h<br> DIMANCHE: 18h-0h</p>
                     </div>
                 </div>
-                <div class="col-md-2">
+                <div class="col-lg-2">
                     <div>
                         <h5>téléphone</h5>
                         <p>08-36-65-65-65</p>
@@ -106,27 +123,29 @@
                     </div>
                     <div>
                         <h5>réseaux sociaux</h5>
-                        <i class="fab fa-facebook-square"></i>
-                        <i class="fab fa-twitter-square"></i>
-                        <i class="fab fa-instagram-square"></i>
+                        <i class="fab fa-facebook-square fa-2x"></i>
+                        <i class="fab fa-twitter-square fa-2x"></i>
+                        <i class="fab fa-instagram-square fa-2x"></i>
                     </div>
                 </div>
-                <div class="col-md-4">
+                <div class="col-lg-4">
                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2730.003463644339!2d-1.530894584002887!3d46.823932879140635!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4805ccb01df95c55%3A0x9629a5e553647efe!2sPlace%20des%20Tilleuls%2C%2085170%20Beaufou!5e0!3m2!1sfr!2sfr!4v1622119573783!5m2!1sfr!2sfr"
                         width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
                 </div>
             </div>
-            <div class="row">
+            <div class="row copyright">
                 <p>
                     <a href="">Mentions Légales</a>
                     <a href="">CGV</a>
-                    <a href="">Contact</a>
+                    <a href="Contact.html">Contact</a>
                 </p>
                 <p>© SteamPunk-Brewery. Tous droits réservés.</p>
             </div>
         </div>
     </footer>
 </body>
+<!-- JavaScript Bundle with Popper -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+
 
 </html>

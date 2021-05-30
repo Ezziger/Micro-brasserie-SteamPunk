@@ -14,7 +14,9 @@ body {
 
 h2 {
     text-align: center;
-    margin: 30px auto;
+    margin: 60px auto;
+    color: #EB9560;
+    font-size: 44px;
 }
 
 h3 {
@@ -52,12 +54,17 @@ a {
 
 /* Header */
 
+.dropdown:hover .dropdown-menu {
+    display: block;
+    background-color: #000;
+}
+
 .header-background {
     background-image: url(images/Bar-brasserie.png);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    height: 80vh;
+    height: 85vh;
 }
 
 .call-to-action {
@@ -81,6 +88,11 @@ a {
     background-color: #EB9560;
     color: #fff;
     transition: 1s;
+}
+
+.round-btn a {
+    text-decoration: none;
+    color: #fff !important;
 }
 
 .round-btn:hover {
@@ -130,8 +142,8 @@ a {
     margin: 10px 15px 0 0 !important;
 }
 
-#eco {
-    background-image: url(images/houblon.png);
+#valeurs {
+    background-image: url(images/baril.jpg);
     width: 49%;
     background-size: cover;
     background-repeat: no-repeat;
@@ -162,11 +174,17 @@ footer {
 }
 
 footer i {
-    margin: 5px 8px;
+    margin: 5px 6px;
 }
 
 .informations {
     text-align: center;
+}
+
+.informations img,
+.informations iframe {
+    max-width: 100%;
+    max-height: 100%;
 }
 
 .copyright {
@@ -174,11 +192,15 @@ footer i {
     margin-top: 10px;
 }
 
+i:hover {
+    transform: scale(1.5);
+}
+
 
 /* Page valeurs*/
 
 .parallax-valeurs {
-    background-image: url(images/barrelagedbeer_main.jpg);
+    background-image: url(images/baril.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -273,7 +295,7 @@ footer i {
 
 /* Page Eco-responsable*/
 
-.parallax-valeurs {
+.parallax-eco {
     background-image: url(images/houblon-2.jpg);
     background-position: center;
     background-size: cover;
@@ -357,3 +379,96 @@ footer i {
 .beer-pos3 {
     margin: 0 auto 0 110px;
 }
+
+
+/*Event */
+
+.event-bg {
+    display: flex;
+    align-self: center;
+    background-image: url(images/salle-reception.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 50vh;
+    margin: 70px 0 !important;
+}
+
+.event-wrapper {
+    width: 15%;
+    height: 55%;
+}
+
+.event-wrapper h4 {
+    text-align: center;
+}
+
+.event-wrapper p {
+    text-align: justify;
+}
+
+.box1,
+.box2 {
+    border: 2px #fff solid;
+    border-radius: 10px;
+    padding: 15px 20px !important;
+}
+
+.box1 {
+    position: absolute;
+    top: 5vh;
+    left: 5vw;
+}
+
+.box2 {
+    position: absolute;
+    bottom: 5vh;
+    right: 5vw;
+}
+
+
+/* Contact */
+
+.form-wrapper {
+    border: 20px #fff solid;
+    width: 75% !important;
+    padding: 0 !important;
+    margin: 0 auto;
+}
+
+.form-centered {
+    display: flex;
+    justify-content: center;
+    margin-top: 25px;
+}
+
+form button {
+    margin-bottom: 40px;
+}
+
+
+/* Media queries */
+
+@media screen and ( max-width: 768px) {
+    #gamme {
+        margin: 10px 0 0 0 !important;
+    }
+    .call-to-action {
+        top: 25%;
+    }
+    .savoir-wrapper {
+        width: 100vw;
+    }
+    h5 {
+        font-size: 13px;
+    }
+    h4 {
+        font-size: 18px;
+    }
+    p {
+        font-size: 11px;
+    }
+}
+
+@media screen and ( min-width: 768px) and (max-width: 992px) {}

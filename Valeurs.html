@@ -25,36 +25,41 @@
                 <div class="row call-to-action">
                     <div class="col-md-6 call-to-action-btn">
                         <h4>Déjà amateur de nos bières !</h4>
-                        <button class="round-btn">Commander</button>
+                        <button class="round-btn"><a href="Catalogue.html">Commander</a></button>
                     </div>
                     <div class="col-md-6 call-to-action-btn">
                         <h4>Nouveau venu ?</h4>
-                        <button class="round-btn">Découvrir</button>
+                        <button class="round-btn"><a href="Produits.html">Découvrir</a></button>
                     </div>
                 </div>
             </div>
         </div>
-        <!--Navbar-->
-        <nav class="navbar navbar-expand-md bg-light navbar-light fixed-top" style="background-color: black !important;">
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top" style="background-color: black !important;">
             <div class="container">
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <a class="navbar-brand" href=""><img src="ressources/images/LogoBrasserieOrangeNoir.png" alt=""></a>
-                <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-                    <div class="navbar-nav ms-auto">
-                        <a class="nav-item nav-link" href="index.html">Accueil</a>
-                        <a class="nav-item nav-link" href="">Savoir-Faire</a>
-                        <a class="nav-item nav-link" href="Produits.html">Produits</a>
-                        <a class="nav-item nav-link" href="Evenements.html">Evenements</a>
-                        <a class="nav-item nav-link" href="">Catalogue</a>
-                        <a class="nav-item nav-link" href="Contact.html">Contact</a>
-                    </div>
+                <a class="navbar-brand" href=""><img src="ressources/images/LogoBrasserieOrangeNoir.png"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main_nav" aria-expanded="false" aria-label="Toggle navigation">
+                 <span class="navbar-toggler-icon"></span>
+             </button>
+                <div class="collapse navbar-collapse" id="main_nav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item active"> <a class="nav-link" href="index.html">Accueil </a> </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link  dropdown-toggle" href="#" data-bs-toggle="dropdown">Savoir-Faire</a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="Valeurs.html">Valeurs</a></li>
+                                <li><a class="dropdown-item" href="Compétences.html">Compétences</a></li>
+                                <li><a class="dropdown-item" href="Eco-responsable.html">Eco-responsable</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item"><a class="nav-link" href="Produits.html"> Produits </a></li>
+                        <li class="nav-item"><a class="nav-link" href="Evenements.html"> Evenements </a></li>
+                        <li class="nav-item"><a class="nav-link" href="Catalogue.html"> Catalogue </a></li>
+                        <li class="nav-item"><a class="nav-link" href="Contact.html"> Contact </a></li>
+                    </ul>
                 </div>
             </div>
         </nav>
     </header>
-
     <main>
         <div class="container-fluid">
             <div class="row">
@@ -82,10 +87,10 @@
     <footer>
         <div class="container">
             <div class="row informations">
-                <div class="col-md-4">
+                <div class="col-lg-4">
                     <img src="ressources/images/LogoBrasserieOrangeNoir.png" alt="Logo de la micro-brasserie SteamPunk">
                 </div>
-                <div class="col-md-2">
+                <div class="col-lg-2">
                     <div>
                         <h5>adresse</h5>
                         <p>STEAMPUNK<br> Place des Tilleuls<br> 85170 Beaufou</p>
@@ -95,7 +100,7 @@
                         <p>LUNDI: Fermé<br> MARDI: 18h-22h<br> MERCREDI: 18h-0h<br> JEUDI: 18h-22h<br> VENDREDI: 18h-0h<br> SAMEDI: 18h-0h<br> DIMANCHE: 18h-0h</p>
                     </div>
                 </div>
-                <div class="col-md-2">
+                <div class="col-lg-2">
                     <div>
                         <h5>téléphone</h5>
                         <p>08-36-65-65-65</p>
@@ -111,7 +116,7 @@
                         <i class="fab fa-instagram-square fa-2x"></i>
                     </div>
                 </div>
-                <div class="col-md-4">
+                <div class="col-lg-4">
                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2730.003463644339!2d-1.530894584002887!3d46.823932879140635!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4805ccb01df95c55%3A0x9629a5e553647efe!2sPlace%20des%20Tilleuls%2C%2085170%20Beaufou!5e0!3m2!1sfr!2sfr!4v1622119573783!5m2!1sfr!2sfr"
                         width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
                 </div>
